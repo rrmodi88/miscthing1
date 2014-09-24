@@ -37,7 +37,7 @@ $(document).ready(function() {
         onSliderLoaded: sliderLoaded,
         onSlideChange: slideChange,
         onSliderResize: slideResize,
-        autoSlide: true,
+        autoSlide: false,
         scrollbar: true,
         scrollbarContainer: '.sliderContainer .scrollbarContainer',
         scrollbarMargin: '0',
@@ -97,6 +97,7 @@ function sliderLoaded(args) {
         setTimeout(function(){
         	
               var slide_height = $(args.currentSlideObject).outerHeight();
+              alert(slide_height)
               $(args.sliderContainerObject).css('min-height',slide_height);
               $(args.sliderContainerObject).css('height','auto');
               // $(args.sliderContainerObject).find('.ux_banner .center').vAlign();
@@ -140,10 +141,8 @@ function sliderLoaded(args) {
 						<div class="slider">
 						
 							<div class="item item1">
-								<div class="inner">
-									<img class="banner-bg" src="../../../_resources/h-slider-1-l.jpg">
+								<div class="inner" style="background-image:url('http://192.168.3.12/jQuery/iosslider/iossliderdemo/data/iosslider/_demos/_resources/h-slider-1-l.jpg')">
 
-									<div class="selectorShadow"></div>
 									<div class="textCon">
 										<div data-animate="animated flipInX" class="text1" style="left: 30px; opacity: 1;"><span>flipInX effect</span></div>
 										<div data-animate="animated flipInX" class="text2" style="left: 30px; opacity: 1;"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>sed do eiusmod tempor incididunt ut labore et dolore.</span></div>
@@ -152,10 +151,10 @@ function sliderLoaded(args) {
 							</div>
 							
 							<div class="item item2">
-								<div class="inner">
-									<img class="banner-bg" src="../../../_resources/h-slider-2-l.jpg">
+								<div class="inner" style="background-image:url('http://192.168.3.12/jQuery/iosslider/iossliderdemo/data/iosslider/_demos/_resources/h-slider-2-l.jpg')">
+							
 									
-									<div class="selectorShadow"></div>
+								
 									<div>
 										<div data-animate="animated bounceIn" class="text1"><span>bounceIn effect</span></div>
 										<div data-animate="animated bounceIn" class="text2"><span>Hardware accelerated using CSS3 for supported<br>iOS, Surface, Android and WebKit browsers.</span></div>
@@ -164,10 +163,10 @@ function sliderLoaded(args) {
 							</div>
 							
 							<div class="item item3">
-								<div class="inner">
-									<img class="banner-bg" src="../../../_resources/h-slider-3-l.jpg">
+								<div class="inner" style="background-image:url('http://192.168.3.12/jQuery/iosslider/iossliderdemo/data/iosslider/_demos/_resources/h-slider-3-l.jpg')">
+
 									
-									<div class="selectorShadow"></div>
+									
 									<div>
 										<div data-animate="animated flipInY" class="text1"><span>flipInY effect</span></div>
 										<div data-animate="animated flipInY" class="text2"><span>Works with the most dynamic desktop<br>and mobile web applicaitons.</span></div>
@@ -176,10 +175,10 @@ function sliderLoaded(args) {
 							</div>
 							
 							<div class="item item4">
-								<div class="inner">
-									<img class="banner-bg" src="../../../_resources/h-slider-4-l.jpg">
+								<div class="inner" style="background-image:url('http://192.168.3.12/jQuery/iosslider/iossliderdemo/data/iosslider/_demos/_resources/h-slider-4-l.jpg')">
+
 									
-									<div class="selectorShadow"></div>
+									
 									<div>
 										<div data-animate="animated swing" class="text1"><span>Swing effect</span></div>
 										<div data-animate="animated swing" class="text2"><span>Support for the latest desktop, iOS, Microsoft Surface,<br>and Android web browsers.</span></div>
@@ -188,10 +187,10 @@ function sliderLoaded(args) {
 							</div>
 							
 							<div class="item item5">
-								<div class="inner">
-									<img class="banner-bg" src="../../../_resources/h-slider-5-l.jpg">
+								<div class="inner" style="background-image:url('http://192.168.3.12/jQuery/iosslider/iossliderdemo/data/iosslider/_demos/_resources/h-slider-5-l.jpg')">
+
 									
-									<div class="selectorShadow"></div>
+									
 									<div>
 										<div data-animate="animated pulse" class="text1"><span>Pulse effect</span></div>
 										<div data-animate="animated pulse" class="text2"><span>Set momentum, elasticity, scrollbars and more to<br>get the perfect look &amp; feel for your online application.</span></div>
@@ -200,10 +199,10 @@ function sliderLoaded(args) {
 							</div>
 
 							<div class="item item6">
-								<div class="inner">
-									<img class="banner-bg" src="../../../_resources/h-slider-1-l.jpg">
+								<div class="inner" style="background-image:url('http://192.168.3.12/jQuery/iosslider/iossliderdemo/data/iosslider/_demos/_resources/h-slider-1-l.jpg')">
 
-									<div class="selectorShadow"></div>
+
+									
 									<div class="textCon">
 										<div data-animate="animated bounce" class="text1"><span>bounce effect</span></div>
 										<div data-animate="animated bounce" class="text2"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>sed do eiusmod tempor incididunt ut labore et dolore.</span></div>
@@ -212,10 +211,10 @@ function sliderLoaded(args) {
 							</div>
 
 							<div class="item item7">
-								<div class="inner">
-									<img class="banner-bg" src="../../../_resources/h-slider-2-l.jpg">
+								<div class="inner" style="background-image:url('http://192.168.3.12/jQuery/iosslider/iossliderdemo/data/iosslider/_demos/_resources/h-slider-2-l.jpg')">
 
-									<div class="selectorShadow"></div>
+
+									
 									<div class="textCon">
 										<div data-animate="animated hinge" class="text1"><span>hinge effect</span></div>
 										<div data-animate="animated hinge" class="text2"><span>Ha Ha ha, consectetur adipisicing elit,<br>sed do eiusmod tempor incididunt ut labore et dolore.</span></div>
@@ -223,10 +222,10 @@ function sliderLoaded(args) {
 								</div>
 							</div>
 							<div class="item item8">
-								<div class="inner">
-									<img class="banner-bg" src="../../../_resources/h-slider-3-l.jpg">
+								<div class="inner" style="background-image:url('http://192.168.3.12/jQuery/iosslider/iossliderdemo/data/iosslider/_demos/_resources/h-slider-3-l.jpg')">
+
 									
-									<div class="selectorShadow"></div>
+									
 									<div>
 										<div data-animate="animated rollIn" class="text1"><span>rollIn effect</span></div>
 										<div data-animate="animated rollIn" class="text2"><span>Works with the most dynamic desktop<br>and mobile web applicaitons.</span></div>
