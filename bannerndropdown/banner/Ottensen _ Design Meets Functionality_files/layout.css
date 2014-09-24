@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* CSS Document */
+/**** Responsive CSS Start ****/ 
+
+@media (max-width: 1200px)
+{
+.container {    width: 1000px;}
+.product_container{ width: 1000px;}
+}
+
+
+@media (max-width: 1024px) {
+
+.container {    width: 1000px;}
+.product_container{ width: 1000px;}
+.lock-image{ right:0;}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 959px){
+.container {    width: 750px;}
+.product_container{ width: 750px;}
+.middle_main #tab-container .tab1{ width:26%;}
+.banner_right h2{ font-size:30px;}
+.banner_right{ margin:50px 0 70px;}
+.banner_left{ padding:70px 0;}
+/* .logo_product{ margin-left: 41px;    width: 77%;}
+  .logo{ margin-left: 41px;    width: 77%;}*/
+
+.checkout_main {    margin: 50px 0 30px;}
+.lock-image {    right: 0px;}
+	 .inner_page {    margin: 50px 0 0;}
+	 				#left-content{ width:100% !important;}
+				#right-content{ width:100% !important}
+	
+	
+	
+
+
+
+}
+
+@media (max-width:767px){
+.container {    width: 97%;}
+.product_container{ width: 97%;}
+
+.banner_left{ display:block; margin:0 auto; width:100%; }
+.banner_right{ float:none; width:95%; margin:0 0 100px;}
+.middle_main #tab-container .tab1{ width:49%;}
+.middle_main #tab-container .tab1 a{ font-size:24px;}
+.ocean_inner li{ width:90%;}
+.footer_left{   display: block;  text-align: center;    width: 100%;}
+.footer_left_icons span{ display:block; float:none;}
+.footer_left > img{ margin:0 auto;}
+.footer_left_icons{ float:none; display:block;}
+ .footer_right {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.copuright {
+    margin-top: 20px;
+    text-align: center;
+}
+.footer_menu li {
+    display: inline-block;
+    float: none;
+    font-size: 13px;
+}
+.footer_menu {
+ 
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+}
+ .category { margin:0px; }
+/* .logo{  margin-left: 41px;    width: 62%;}
+ .logo_product{   margin-left: 41px;    width: 62%;}*/
+     #myCarousel .item .slide_caption { position: relative; display: inline-block; background: #000;}
+    #myCarousel .item .slide_caption .caption_right a.read_more {background: #333333;}
+    #myCarousel .item .slide_caption .caption_title .caption_price {display: inline-block;}
+    
+    #myCarousel .item .slide_caption .caption_title { font-size: 23px;}
+    #myCarousel .item .slide_caption .caption_title .caption_price { font-size: 11px;}
+    #myCarousel .item .slide_caption .caption_desc,
+    #myCarousel .item .slide_caption .caption_desc p { font-size: 12px;}
+#right-content { margin:20px 0 0 !important;}
+	#left-content{ margin:20px 0 0 !important; }
+	    .header_top{ padding:0 5px;}
+	.header_bottom{ padding:0 5px;}
+		.product_middle {    padding: 0 5px;}
+			#left-content{ padding-right:0px;}
+			.checkout_main {    margin: 50px 0 30px;}
+	.checkout_right {    float: none;    width: 100%;}
+	 .checkout_left{    float: none;    width: 100%;}
+ .lock-image {    right: 0px;}
+		.inner_page {    margin: 50px 0 0px;}
+	.thanku_left {    float: none;    width: 100%;}
+		.thanku_right {    float: none;    width: 100%;}
+		.todo_left {     width: 20%;}
+		.todo_right {    width: 80%;}
+		.thanku_btn {    margin: 0;}
+		.field-input{ text-align:left; font-size:18px;}
+		.field-input:after{ right:20px;  height: 15px;    width: 15px;}
+									#left-content{ width:100% !important;}
+				#right-content{ width:100% !important}
+	
+
+}
+
+@media (max-width: 479px){
+
+.container {    width: 97%;}
+.product_container{ width: 97%;}
+/*.logo {   margin-left: 41px;    margin-top: 5px;    padding: 0 10px;    width: 50%;}
+.logo_product{   margin-left: 41px;    margin-top: 5px;    padding: 0 10px;    width: 50%;}*/
+.footer_left > img{ margin:0 auto;}
+.logo {    margin-left: 41px;}
+
+#responsive-menu{ margin-top:0;}
+.banner_left{ float:none; width:100%; height:auto;}
+.banner_right{ float:none; width:95%; margin:0 0 100px;}
+.middle_main #tab-container .tab1{ width:49%;}
+.middle_main #tab-container .tab1 a{ font-size:24px;}
+.ocean_inner li{ width:95%;}
+.footer_left{   display: block;  text-align: center;    width: 100%;}
+.footer_left_icons span{ display:block; float:none;}
+.footer_left > img{ margin:0 auto;}
+.footer_left_icons{ float:none; display:block;}
+ .footer_right {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+
+.copuright {
+    margin-top: 20px;
+    text-align: center;
+}
+ 
+ .footer_menu li {
+    display: inline-block;
+    float: none;
+    font-size: 13px;
+}
+.footer_menu {
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer_menu li a {    padding: 0 3px; }
+ .category { margin:0px; }
+ .cart span{ display:none; width:auto;}
+    #myCarousel .item .slide_caption { position: relative; display: inline-block; background: #000;}
+    #myCarousel .item .slide_caption .caption_right a.read_more {background: #333333;}
+    #myCarousel .item .slide_caption .caption_title .caption_price {display: inline-block;}
+    
+    #myCarousel .item .slide_caption .caption_title { font-size: 23px;}
+    #myCarousel .item .slide_caption .caption_title .caption_price { font-size: 11px;}
+    #myCarousel .item .slide_caption .caption_desc,
+    #myCarousel .item .slide_caption .caption_desc p { font-size: 12px;}
+	#myCarousel .item .slide_caption .caption_left {    float: none;       width: 100%;}
+	#myCarousel .item .slide_caption .caption_right {    float: none;      width: 100%;}
+	#right-content { margin:20px 0 0 !important;}
+	#left-content{ margin:20px 0 0 !important; }
+	.logo img{ width:75%; padding:2px 0;}
+	    .header_top{ padding:0 5px;}
+	.header_bottom{ padding:0 5px;}
+	.product_middle {    padding: 0 5px;}
+	#left-content{ padding-right:0px;}
+	.checkout_main {    margin: 50px 0 0px;}
+	.checkout_right {    float: none;    width: 100%;}
+	 .checkout_left{    float: none;    width: 100%;}
+	.lock-image {    right: 0px;}
+	 .field-input{ font-size:18px;}
+	 
+	 
+	 .inner_page {    margin: 50px 0 0px;}
+	.thanku_left {    float: none;    width: 100%;}
+		.thanku_right {    float: none;    width: 100%;}
+		.todo_left {     width: 30%;}
+		.todo_right {    width: 68%;}
+		.thanku_btn {    margin: 0;}
+		.cart-items .cart-item .cart-product { width:60%;}
+		.field-input{ padding:10px 8px 10px 10px}
+		.btn.btn-large.field-input > span {    padding-right: 40px;}
+				.field-input{ text-align:left; font-size:18px;}
+				#left-content{ width:100% !important;}
+				#right-content{ width:100% !important}
+	
+
+	
+}
+
+

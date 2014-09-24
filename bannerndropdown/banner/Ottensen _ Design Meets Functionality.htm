@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<title>Ottensen | Design Meets Functionality</title>
+<!--        <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet">-->
+        <link href="Ottensen%20_%20Design%20Meets%20Functionality_files/bootstrap.css" rel="stylesheet">
+<link href="Ottensen%20_%20Design%20Meets%20Functionality_files/styles.css" rel="stylesheet">
+
+
+<link href="Ottensen%20_%20Design%20Meets%20Functionality_files/jquery.css" rel="stylesheet">  
+<link href="Ottensen%20_%20Design%20Meets%20Functionality_files/layout.css" rel="stylesheet">
+<script src="Ottensen%20_%20Design%20Meets%20Functionality_files/jquery-1.js"></script>
+<script src="Ottensen%20_%20Design%20Meets%20Functionality_files/jquery.js" type="text/javascript"></script>
+<script src="Ottensen%20_%20Design%20Meets%20Functionality_files/bootstrap.js"></script>
+<!--<script src="js/jquery.excoloSlider.js" type="text/javascript"></script>-->
+<script src="Ottensen%20_%20Design%20Meets%20Functionality_files/jquery_003.js"></script>
+ <!--        <script src="js/jquery.accordian.js" type="text/javascript"></script>-->
+<!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+  <script>
+        // Settings for Adaptive.js
+        var ADAPT_CONFIG = {
+            path: 'css/',
+            dynamic: true,
+            range: [
+                '0px    to 760px  = mobile.min.css',
+                '760px  to 980px  = 720.min.css',
+                '980px            = 960.min.css'
+            ]
+        };
+		
+		jQuery(document).ready(function(){
+jQuery('.middle_main,.slider, .footer').click(function() {
+ 
+ jQuery('#responsive-menu').removeClass('in');
+ 
+ 
+  });
+
+//rajat change
+alert($(window).width())
+
+ var $rawWidth = $(window).width() - 300 - 40 -40;
+alert($rawWidth)
+	
+
+	if($rawWidth < 1024)
+	{
+			jQuery("#right-content").css("width",$rawWidth);
+	}
+	else
+	{
+		jQuery("#right-content").css("width",1024);
+	}
+
+
+	if($(window).width() > 1364)
+	{
+		if($rawWidth > 1024)
+		{
+			jQuery(".product_container").css("width","1364px");
+		}
+		else
+		{
+			jQuery(".product_container").css("width",$(window).width());
+		}
+		
+		
+	}
+	else
+	{
+	
+		jQuery(".product_container").css("width",$(window).width());
+	}
+    
+
+
+
+
+
+    if($(window).height() > 918)
+    {
+        $(".carousel-inner").height(768)    
+    }
+    else
+    {
+        $(".carousel-inner").height($(window).height()-150)
+    }
+	if($(window).height() < 630 &&  $(window).width() > 400)
+    {
+
+    	$(".carousel-inner").height(480) 
+    }
+
+       
+$(window ).resize( function () {
+
+    if($(window).height() > 918)
+    {
+        $(".carousel-inner").height(768)    
+    }
+    else
+    {
+        $(".carousel-inner").height($(window).height()-150)
+    }
+
+    if($(window).height() < 630 &&  $(window).width() > 360)
+    {
+    	$(".carousel-inner").height(480) 
+    }
+
+
+    var $rawWidth = $(window).width() - 300 - 40- 40;
+
+	
+
+	if($rawWidth < 1024)
+	{
+			jQuery("#right-content").css("width",$rawWidth);
+	}
+	else
+	{
+		jQuery("#right-content").css("width",1024);
+	}
+
+
+	if($(window).width() > 1364)
+	{
+		
+		jQuery(".product_container").css("width","1364px");
+	}
+	else
+	{
+	
+		jQuery(".product_container").css("width",$(window).width());
+	}
+    
+})
+
+
+    });
+
+
+</script>
+    
+    
+    <script src="Ottensen%20_%20Design%20Meets%20Functionality_files/adapt.js"></script><link href="Ottensen%20_%20Design%20Meets%20Functionality_files/960.htm" media="screen" rel="stylesheet">
+    <script type="text/javascript">
+        SyntaxHighlighter.config.tagName = "code";
+    </script>
+
+
+    <script>
+        $(function () {
+            
+            $("#sliderB").excoloSlider();
+        });
+    </script>
+ 
+        <script src="Ottensen%20_%20Design%20Meets%20Functionality_files/jquery-migrate-1.js"></script>
+        
+        <script src="Ottensen%20_%20Design%20Meets%20Functionality_files/jquery_002.js"></script>
+<!--        <script src="js/jquery.accordian.js" type="text/javascript"></script>-->
+<script src="Ottensen%20_%20Design%20Meets%20Functionality_files/functions.js" type="text/javascript"></script>
+
+        
+</head>
+<body>
+<div class="wrepar">
+<div class="header">
+  <div class=" product_container">
+  
+   <!--  navigation -->
+        
+        
+                <nav class="navbar" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                       
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="responsive-menu">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Collections <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Ocean blue</a></li>
+                                    <li><a href="#">Sunset horizon</a></li>
+                                    <li><a href="#">Tropical breeze</a></li>
+                                    <li><a href="#">Olive green</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Laptop Bags</a></li>
+                                    <li><a href="#">Laptop Sleeves</a></li>
+                                    <li><a href="#">iPad Cases</a></li>
+                                    <li><a href="#">iPhone Cases</a></li>
+                                    <li><a href="#">Mouse Pads</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="#">FAQs</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                        </nav>
+                    <!-- /.navbar-collapse -->
+  
+
+    <div class="cart"><a href="#"><img src="Ottensen%20_%20Design%20Meets%20Functionality_files/cart.png"><span>US</span> <p>$ 297</p> </a></div> 
+    
+  <div class="logo"><a href="#"><img src="Ottensen%20_%20Design%20Meets%20Functionality_files/logo1.png"></a></div>    
+    
+    
+    
+    
+      </div>
+    </div>
+
+
+
+
+<div class=" clear"></div>
+<!-- middle start-->
+<!--tab-->
+<div class="product_container imagepart">
+<div class="middle_main ">
+
+
+
+                <div id="left-content">
+
+                    <div class="wrapper">
+                        <div class="page-content">
+                            <h1>The Urban Raider</h1>
+                            <div class="product-cats">
+                                <ul>
+                                    <li><a href="#">iPad Case</a></li>
+                                    <li><a href="#">Ocean Blue</a></li>
+                                   <!-- <li><a href="#">Sunset Horizon</a></li>
+                                    <li><a href="#">Olive Green</a></li>
+                                    <li><a href="#">Tropical Breeze</a></li>-->
+                                </ul>
+                            </div>
+                            <p>Lorem ipsum ing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                                                        <p>Lorem ipsum ing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                        </div>
+                        <div data-easytabs="true" id="tab-container" class="tab-container">
+                            <ul class="etabs">
+                                <li id="asd" class="tab first active"><a class="active" href="#tabs-pricing">PRICING</a></li>
+                                <li id="asd1" class="tab"><a href="#tabs-features">FEATURES</a></li>
+                            </ul>
+                            <div class="clear"></div>
+                            <div style="display: block;" id="tabs-pricing" class="tab-blocks active">
+                            	<div style="position:relative;">
+                                
+                                
+
+                                <form>
+                                <span class="select" id="select">MacBook Pro Retina 13" <p>$297</p> </span>
+                                    <select class="styled">
+                                       <option selected="selected" value="MacBook Pro Retina 13">MacBook Pro Retina 13"
+                                       <!-- <span style="display:inline-block; text-align:right; background:red;">$297</span>-->
+                                        </option>
+                                       <option value="MacBook Air Retina 11">MacBook Air Retina 11"</option>
+                                       <option value="MacBook Air Retina 13">MacBook Air Retina 13</option>
+                                    </select>
+                                    <button class="btn add-to-cart" type="button" value="OK" name="button">
+                                    <div class="price">$297</div><span><a href="#">Add To Cart</a></span></button>
+                                 </form>
+
+                                 
+                                 
+                                 </div>
+                            </div>
+                            <div style="display: none;" id="tabs-features" class="tab-blocks">
+                                <ul>
+                                    <li>Lorem ipsum ing elit, sed do eiusmod tempor incididunt ut labore</li>
+                                    <li>Lorem ipsum ing elit, sed do eiusmod tempor incididunt ut labore</li>
+                                    <li>Lorem ipsum ing elit, sed do eiusmod tempor incididunt ut labore</li>
+                                    <li>Lorem ipsum ing elit, sed do eiusmod tempor incididunt ut labore</li>
+                                    <li>Lorem ipsum ing elit, sed do eiusmod tempor incididunt ut labore</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div><!-- Left Content -->
+ <div id="right-content">
+                    
+
+                   
+                    <div class="productSlideNav">
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>                        </a>                    </div>
+
+                    <div id="myCarousel" class="carousel slide carousel-fit" data-ride="carousel" data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="fill" style="background-image: url('images/slides/1.png');">
+                                    <div class="">
+                                        <img style="display: none;" src="Ottensen%20_%20Design%20Meets%20Functionality_files/1.png" alt="">
+                                        <div class="slide_caption">
+                                            <div class="caption_left">
+                                                <h3 class="caption_title">The Urban Raider<!--<span class="caption_price">US$ 297</span>--></h3>
+                                                <div class="caption_desc">
+                                                    <p>Loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                                                </div>
+                                            </div>
+                                            <!--<div class="caption_right">
+                                                <a class="read_more" href ="#"><span>Read More</span></a>                                            </div>-->
+                                        </div> 
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="fill" style="background-image: url('images/slides/2.png');">
+                                    <div class="">
+                                        <img style="display: none;" src="Ottensen%20_%20Design%20Meets%20Functionality_files/2.png" alt="">
+                                        <div class="slide_caption">
+                                            <div class="caption_left">
+                                                <h3 class="caption_title">Responsive Images<!--<span class="caption_price">US$ 400</span>--></h3>
+                                                <div class="caption_desc">
+                                                    <p>Loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                                                </div>
+                                            </div>
+                                           <!-- <div class="caption_right">
+                                                <a class="read_more" href ="#"><span>Read More</span></a>                                            </div>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="fill" style="background-image: url('images/slides/3.png');">
+                                    <div class="">
+                                        <img style="display: none;" src="Ottensen%20_%20Design%20Meets%20Functionality_files/3.png" alt="">
+                                        <div class="slide_caption">
+                                            <div class="caption_left">
+                                                <h3 class="caption_title">Enabled Touch Swipe<!--<span class="caption_price">US$ 397</span>--></h3>
+                                                <div class="caption_desc">
+                                                    <p>Loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                                                </div>
+                                            </div>
+                                            <!--<div class="caption_right">
+                                                <a class="read_more" href ="#"><span>Read More</span></a>                                            </div>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ <!-- #right-content -->
+
+
+
+
+
+
+        </div>
+        </div>
+
+<!--horizon start-->
+
+
+<!--footer start-->
+<div class="clear"></div>
+<div class="footer">
+<div class=" product_container">
+
+
+  <div class=" footer_left"> <img src="Ottensen%20_%20Design%20Meets%20Functionality_files/footer_logo.png">
+<div class="footer_left_icons">    <span>Follow our latest designs</span> 
+    <a href="#"><img src="Ottensen%20_%20Design%20Meets%20Functionality_files/pin.png"></a>
+        <a href="#"><img src="Ottensen%20_%20Design%20Meets%20Functionality_files/facebook.png"></a>
+            <a href="#"><img src="Ottensen%20_%20Design%20Meets%20Functionality_files/email.png"></a>
+            </div>
+  </div>
+  <div class=" footer_right"> 
+  <div class="copuright">Copyright © All rights reserved</div>
+    <div class="footer_menu">
+    <ul>
+    <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy policy	 </a></li>
+            <li><a href="#">Terms and conditions	 </a></li>
+    </ul>
+    </div>
+  
+  </div>
+</div>
+</div> 
+
+
+
+</div>
+
+<script type="text/javascript">
+
+    
+
+</script>
+ 
+
+
+</body></html>
